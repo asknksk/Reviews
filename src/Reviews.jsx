@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import data from "./data";
 import Review from "./Review";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
@@ -28,6 +28,16 @@ const Reviews = () => {
     randIndex !== index ? setIndex(randIndex) : handleRandomReview();
   };
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      handleNext();
+    }, 5000);
+
+    return () => {
+      clearInterval(interval);
+    };
+  });
+
   return (
     <section>
 
@@ -44,7 +54,6 @@ const Reviews = () => {
         </span>
 
         <button onClick={handleRandomReview}>Surprise Me</button>
-        
       </div>
     </section>
   );
