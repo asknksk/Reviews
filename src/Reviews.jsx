@@ -39,12 +39,10 @@ const Reviews = () => {
   });
 
   return (
-    <section>
-
+    <section className="container">
       <Review {...data[index]} key={data[index].id} />
 
       <div className="btn-container">
-
         <span className="previous" onClick={() => handlePrevious()}>
           <FaChevronLeft />
         </span>
@@ -53,7 +51,9 @@ const Reviews = () => {
           <FaChevronRight />
         </span>
 
-        <button onClick={handleRandomReview}>Surprise Me</button>
+        <button className="surprise-btn" onClick={handleRandomReview}>
+          Surprise Me
+        </button>
       </div>
     </section>
   );
