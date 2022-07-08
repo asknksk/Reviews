@@ -1,9 +1,9 @@
-import reviews from "./Reviews";
+import Reviews from "./Reviews";
 
 function App() {
   return (
     <main>
-      <h1>Out Reviews</h1>
+      <h1>Our Reviews</h1>
       <Reviews />
     </main>
   );
