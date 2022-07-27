@@ -5,7 +5,9 @@
 
 ## Libraries and Technologies I use
 * React
-* SASS for styling
+* setInterval for automatic change 
+* React-icons 
+* CSS
 
 <hr>
 
