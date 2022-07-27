@@ -12,7 +12,7 @@
 <hr>
 
 ## Project Preview 
-![Alt Text]()
+![Alt Text](https://github.com/asknksk/Reviews/blob/master/assets/Preview.gif)
 
 <hr> 
 
